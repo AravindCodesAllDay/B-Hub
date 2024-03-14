@@ -21,9 +21,12 @@ const Pricing = () => {
             <h3>to Grind</h3>
             <h3>The Market</h3>
           </div>
-          <div className="App w-40 -mt-56 flex justify-center items-center hover:scale-125">
-            <img className="transition-all" src={ring} />
-            <img className="-ml-[105px]" src={now} />
+          <div className="w-96 flex justify-center items-center hover:scale-110">
+            <img
+              className="mx-auto transition-all hover:animate-spin"
+              src={ring}
+            />
+            <img className="absolute mx-auto" src={now} />
           </div>
         </div>
         <Footer />

@@ -49,7 +49,7 @@ function Navbar() {
               <Link
                 key={index}
                 to={path}
-                className="hover:animate-pulse hover:scale-125 block py-2 text-gray-300 hover:text-white transition-colors duration-300"
+                className="hover:scale-125 block py-2 text-gray-300 hover:text-white transition-colors duration-300"
                 onClick={handleNavItemClick}
               >
                 {label}
