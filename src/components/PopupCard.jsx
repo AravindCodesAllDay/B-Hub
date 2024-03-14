@@ -14,11 +14,11 @@ const Popupcard = ({ togglePopup, showPopup, selectedCard }) => {
                 {selectedCard.name} {/* Display selected card name */}
               </h5>
               <p className="mb-6 text-lg text-neutral-600 dark:text-neutral-200">
-                {selectedCard.decription}
+                {selectedCard.description}
               </p>
               <button
                 className="mt-6 bg-red-500 text-white px-6 py-3 rounded-lg hover:bg-red-600 border-2"
-                onClick={togglePopup}
+                onClick={() => togglePopup(null)}
               >
                 Close
               </button>
