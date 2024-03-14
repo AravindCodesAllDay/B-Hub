@@ -61,7 +61,7 @@ const ServiceItem = ({ imgSrc, imgAlt, description, reversed }) => {
         }}
         transition={{ duration: 0.5 }}
       />
-      <p className="text-gray-700 flex flex-col text-7xl z-30 ml-6">
+      <p className="text-gray-700 flex flex-col text-7xl z-30 mx-6">
         {description}
       </p>
     </div>

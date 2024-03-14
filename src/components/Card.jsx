@@ -1,8 +1,7 @@
 import React from "react";
 import cardHeaderImage from "../assets/1.jpg";
 import victorImage from "../assets/image-victor.jpg";
-import { FaWhatsapp, FaLinkedinIn } from "react-icons/fa";
-import { FiMail } from "react-icons/fi";
+import { FaLinkedinIn } from "react-icons/fa";
 
 const Card = ({ details, togglePopup }) => {
   const handleCardClick = (detail) => {
@@ -44,17 +43,10 @@ const Card = ({ details, togglePopup }) => {
 
             <hr className="bg-black my-2" />
             <div className="flex justify-around text-center mt-4">
-              <a href="https://wa.me/8124813376" target="_blank">
-                <FaWhatsapp
-                  size={22}
-                  className="cursor-pointer hover:scale-125"
-                />
-              </a>
               <FaLinkedinIn
                 size={22}
                 className="cursor-pointer hover:scale-125"
               />
-              <FiMail size={22} className="cursor-pointer hover:scale-125" />
             </div>
           </div>
         ))}

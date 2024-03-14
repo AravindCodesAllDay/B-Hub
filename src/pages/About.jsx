@@ -9,9 +9,9 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Share from "../components/Share";
 import Popupcard from "../components/Popupcard";
-import Slider from "../components/Slider";
 import Title2 from "../components/Title2";
-import OurStory from "../components/OurStory";
+import Map from "../components/Map";
+import Gallery from "../components/Gallery";
 
 const About = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -92,14 +92,14 @@ const About = () => {
       <div className="bg-background-0 text-textcolor-0 h-full">
         <Navbar />
         <Title2 />
-        <Slider />
-        <OurStory />
         <Card details={teamData} togglePopup={togglePopup} />
         <Popupcard
           togglePopup={togglePopup}
           showPopup={showPopup}
           selectedCard={selectedCard}
         />
+        <Gallery />
+        <Map />
         <Footer />
         <Share />
       </div>

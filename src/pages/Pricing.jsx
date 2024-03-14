@@ -3,7 +3,6 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ring from "../assets/ring.svg";
 import now from "../assets/now.svg";
-import Table from "../components/Table";
 
 const Pricing = () => {
   return (
@@ -27,7 +26,6 @@ const Pricing = () => {
             <img className="-ml-[105px]" src={now} />
           </div>
         </div>
-        <Table />
         <Footer />
       </div>
     </>

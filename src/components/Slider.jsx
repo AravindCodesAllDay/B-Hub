@@ -15,14 +15,10 @@ const cardVariants = {
   },
 };
 
-const hue = (h) => `hsl(${h}, 100%, 50%)`;
-
-function Card({ emoji, hueA, hueB }) {
-  const background = `linear-gradient(306deg, ${hue(hueA)}, ${hue(hueB)})`;
-
+function Card({ emoji }) {
   return (
     <motion.div
-      className="overflow-hidden flex items-center justify-center relative pt-20 mb-[-120px] m-8 "
+      className="overflow-hidden flex items-center justify-center relative pt-20 m-8 "
       style={{ width: "calc(50% - 4rem)" }}
       initial="offscreen"
       whileInView="onscreen"
@@ -35,7 +31,7 @@ function Card({ emoji, hueA, hueB }) {
             "path('M 0 303.5 C 0 292.454 8.995 285.101 20 283.5 L 460 219.5 C 470.085 218.033 480 228.454 480 239.5 L 500 430 C 500 441.046 491.046 450 480 450 L 20 450 C 8.954 450 0 441.046 0 430 Z')",
         }}
       >
-        <div className="w-full h-full" style={{ background }} />
+        <div className="w-full h-full bg-[#4f84c4]" />
       </div>
       <motion.div
         className="font-bold text-6xl w-72 h-96 flex items-center justify-center bg-textcolor-0 rounded-xl shadow-xl"
@@ -47,25 +43,16 @@ function Card({ emoji, hueA, hueB }) {
   );
 }
 
-const food = [
-  ["🍅", 340, 10],
-  ["🍊", 20, 40],
-  ["🍋", 60, 90],
-  ["🍐", 80, 120],
-  ["🍏", 100, 140],
-  ["🫐", 205, 245],
-  ["🍆", 260, 290],
-  ["🍇", 290, 320],
-];
+const food = ["🍅", "🍐", "🍏", "🫐", "🍇"];
 
 export default function Slider() {
   return (
-    <div className="flex flex-wrap justify-center items-center">
-      <h2 className="text-[120px] font-primary text-center w-full mb-12">
+    <div className="flex flex-wrap justify-center items-center bg-background-0">
+      <h2 className="text-[120px] font-primary text-center w-full  text-textcolor-0">
         Diverse Design Selection
       </h2>
-      {food.map(([emoji, hueA, hueB]) => (
-        <Card emoji={emoji} hueA={hueA} hueB={hueB} key={emoji} />
+      {food.map((emoji) => (
+        <Card emoji={emoji} key={emoji} />
       ))}
     </div>
   );

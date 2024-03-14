@@ -11,10 +11,10 @@ import { FiMail } from "react-icons/fi";
 import image from "../assets/b-hub.jpg";
 function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const [recipient, setRecipient] = useState("bhubconsultancy@gmail.com");
 
   const NAV_LINKS = [
-    { path: "/home", label: "Home" },
+    { path: "/", label: "Home" },
+    { path: "/designs", label: "Designs" },
     { path: "/about", label: "About" },
     { path: "/pricing", label: "Pricing" },
     { path: "/contact", label: "Contact" },
@@ -27,13 +27,6 @@ function Navbar() {
   const handleNavItemClick = () => {
     setIsNavOpen(false);
     document.body.style.overflow = "auto";
-  };
-
-  const openGmailCompose = () => {
-    // URL for opening Gmail compose window
-    const url = `https://mail.google.com/mail/u/0/?view=cm&fs=1&to=${recipient}`;
-    // Open the Gmail compose window in a new tab
-    window.open(url, "_blank");
   };
 
   return (
@@ -75,17 +68,21 @@ function Navbar() {
                   className="cursor-pointer hover:scale-125"
                 />
               </a>
+              <a
+                href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=bhubconsultancy@gmail.com"
+                target="_blank"
+              >
+                <FiMail
+                  size={22}
+                  className="cursor-pointer hover:scale-125"
+                  alt="Gmail Logo"
+                />
+              </a>
               <FaLinkedinIn
                 size={22}
                 className="cursor-pointer hover:scale-125"
               />
               <FaYoutube size={22} className="cursor-pointer hover:scale-125" />
-              <FiMail
-                size={22}
-                className="cursor-pointer hover:scale-125"
-                alt="Gmail Logo"
-                onClick={openGmailCompose}
-              />
             </div>
           </div>
         </div>
