@@ -5,6 +5,8 @@ import ring from "../assets/ring.svg";
 import now from "../assets/now.svg";
 
 const Pricing = () => {
+  window.scrollTo(0, 0);
+
   return (
     <>
       <Navbar />

@@ -7,6 +7,8 @@ import Marquee from "react-fast-marquee";
 import Table from "../components/Table";
 
 const Home = () => {
+  window.scrollTo(0, 0);
+
   return (
     <>
       <Navbar />

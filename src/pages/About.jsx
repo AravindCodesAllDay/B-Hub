@@ -14,6 +14,8 @@ import Map from "../components/Map";
 import Gallery from "../components/Gallery";
 
 const About = () => {
+  window.scrollTo(0, 0);
+
   const [showPopup, setShowPopup] = useState(false);
   const [selectedCard, setSelectedCard] = useState(null); // State to store selected card detail
 

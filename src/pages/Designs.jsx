@@ -7,6 +7,8 @@ import Title2 from "../components/Title2";
 import Gallery from "../components/Gallery";
 
 export default function Designs() {
+  window.scrollTo(0, 0);
+
   return (
     <>
       <div className="bg-background-0">

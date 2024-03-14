@@ -8,6 +8,8 @@ import {
 } from "react-icons/fa";
 
 const Contact = () => {
+  window.scrollTo(0, 0);
+
   return (
     <>
       <div className="bg-background-0 text-textcolor-0 h-screen w-screen font-primary relative">
