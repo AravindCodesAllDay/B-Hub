@@ -8,7 +8,7 @@ import Ragul from "../assets/Ragul.jpg";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Share from "../components/Share";
-import Popupcard from "../components/Popupcard";
+import PopupCard from "../components/PopupCard";
 import Title2 from "../components/Title2";
 import Map from "../components/Map";
 import Gallery from "../components/Gallery";
@@ -71,7 +71,7 @@ const About = () => {
         <Navbar />
         <Title2 />
         <Card details={teamData} togglePopup={togglePopup} />
-        <Popupcard
+        <PopupCard
           togglePopup={togglePopup}
           showPopup={showPopup}
           selectedCard={selectedCard}
